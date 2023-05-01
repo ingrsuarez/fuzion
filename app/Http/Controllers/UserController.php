@@ -15,7 +15,7 @@ class UserController extends Controller
     public function index()
     {
         
-        return view('secure.login');
+        return view('home');
     }
 
     /**
@@ -49,7 +49,7 @@ class UserController extends Controller
     public function show($id)
     {
 
-       return view('secure.login',['id'=>$id]);
+       return view('home',['id'=>$id]);
     }
 
     /**
