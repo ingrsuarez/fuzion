@@ -32,22 +32,23 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="container">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container ms-5">
+                <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          <a class="nav-link active" aria-current="page" href="{{url('home')}}">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Features</a>
+                          <a class="nav-link" href="">Ventas</a>
                         </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
+                            Proyectos
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="{{url('proyectos')}}">Nuevo</a></li>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                           </ul>
@@ -97,12 +98,31 @@
         
 
         {{-- <div class="offcanvas offcanvas-start offcanvas-backdrop position-absolute sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"> --}}
-        <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="offcanvas">    
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
+        <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="offcanvas">
+            <div class="offcanvas-body p-0">
+                <nav class="navbar-dark">
+                    
+                    <ul class="navbar-nav">
+                      <li>
+
+                        <a class="nav-link text-dark" href="">
+                            <span class="me-2"><i class="bi bi-9-square-fill"></i></span>
+                            <span>PANEL</span></a>
+                      </li>
+                      <li><hr class="divider"></li>
+                      <li>
+                        <a class="nav-link" href="">USUARIO</a>
+                      </li>
+                    </ul>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="{{url('proyectos')}}">Nuevo</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                </nav>    
+            </div>  
+
             <div>
               Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
             </div>
@@ -113,10 +133,11 @@
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </div>
-          </div>
+          
         </div>
            
         <main class="py-4 position-relative top56">

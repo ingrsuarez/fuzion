@@ -23,3 +23,8 @@ Route::resource('usuario', UserController::class);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//PROYECTOS
+
+Route::get('/proyectos',[App\Http\Controllers\ProyectosController::class, 'index']);
+Route::post('/proyectos',[App\Http\Controllers\ProyectosController::class, 'store'])->name('proyecto');

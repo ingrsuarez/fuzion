@@ -20,6 +20,7 @@
     visibility: visible !important;
     top: 56px;
     height: calc(100% - 56px);
+    z-index: 900 !important;
   }
 }
 /*!
