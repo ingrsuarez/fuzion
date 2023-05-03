@@ -4,9 +4,15 @@ $side-width: 270px;
 .top56 {
 		top: 56px;
 	}
-	.sidebar-nav {
-		top: 56px !important;
-	}
+.sidebar-nav {
+	top: 56px !important;
+}
+.logo {
+	width: 18%;
+	max-width: 140px;
+	min-width: 80px;
+}
+
 @media (min-width: 769px){
 	.offcanvas-backdrop::before{
 		display: none;

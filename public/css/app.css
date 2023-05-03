@@ -8,6 +8,12 @@
   top: 56px !important;
 }
 
+.logo {
+  width: 18%;
+  max-width: 140px;
+  min-width: 80px;
+}
+
 @media (min-width: 769px) {
   .offcanvas-backdrop::before {
     display: none;

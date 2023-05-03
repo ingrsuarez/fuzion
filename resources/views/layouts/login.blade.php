@@ -30,12 +30,12 @@
             
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav d-flex flex-row ms-auto">
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link mx-1" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
 
@@ -77,9 +77,9 @@
           
         </div>
            
-        <main class="py-4 position-relative top56">
+        <div class="py-4 position-relative top56">
             @yield('content')
-        </main>
+        </div>
         
     </div>
 </body>
