@@ -13,8 +13,10 @@ return [
     |
     */
 
-    'failed' => 'Nombre de usuario o contraseña incorrectos.',
+    'failed' => 'Error!',
+    'email' => 'Nombre de usuario inexistente.',
     'password' => 'Contraseña incorrecta.',
+    'estado' => 'Su usuario esta inactivo, contacte a su supervisor!',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 
 ];
