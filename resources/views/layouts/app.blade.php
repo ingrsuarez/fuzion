@@ -44,13 +44,24 @@
                         </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Proyectos
+                            Trabajos
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{{url('proyectos')}}">Nuevo</a></li>
+                            <li><a class="dropdown-item" href="{{url('trabajo/nuevo')}}">Nuevo</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="{{url('trabajo/listado')}}">Listado de Proyectos</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            RRHH
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="{{url('usuarios')}}">Usuarios</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            {{-- <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li> --}}
                           </ul>
                         </li>
                     </ul>
@@ -98,6 +109,8 @@
         
 
         {{-- <div class="offcanvas offcanvas-start offcanvas-backdrop position-absolute sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"> --}}
+    <!-- Authentication Links -->
+
         <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="offcanvas">
             <div class="offcanvas-body p-0">
                 <nav class="navbar-dark">
@@ -139,7 +152,7 @@
             </div>
           
         </div>
-           
+ 
         <main class="py-4 position-relative top56">
             @yield('content')
         </main>

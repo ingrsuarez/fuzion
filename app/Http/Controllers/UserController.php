@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-
+use App\Models\User;
 
 class UserController extends Controller
 {
@@ -14,8 +14,9 @@ class UserController extends Controller
      */
     public function index()
     {
-        
-        return view('home');
+        $users = User::all();
+        // return $users;
+        return view('usuarios.listado_usuarios',compact('users'));
     }
 
     /**

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<form id="nuevo-trabajo" action="{{ route('proyecto') }}" method="POST">
+<form id="nuevo-trabajo" action="{{ route('storeTrabajo') }}" method="POST">
 @csrf
 <div class="col-sm px-5">
     <div class="card mb-3" style="max-width: 28rem;">
@@ -14,9 +14,9 @@
               <label class="input-group-text" for="cliente">Cliente</label>
               <select class="form-select" id="cliente" name="cliente">
                 <option selected>Seleccione...</option>
-                <option value="IPAC">IPAC</option>
-                <option value="PARTICULAR">PARTICULAR</option>
-                <option value="YPF">YPF</option>
+                <option value="1">IPAC</option>
+                <option value="2">PARTICULAR</option>
+                <option value="3">YPF</option>
               </select>
             </div>
             <div class="input-group mb-3">
