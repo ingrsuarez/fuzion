@@ -116,12 +116,23 @@
                 <nav class="navbar-dark">
                     
                     <ul class="navbar-nav">
-                      <li>
-
-                        <a class="nav-link text-dark" href="">
-                            <span class="me-2"><i class="bi bi-9-square-fill"></i></span>
-                            <span>PANEL</span></a>
-                      </li>
+                        <li>
+                            <a class="nav-link text-dark" href="{{route('home')}}">
+                                <span class="me-2"><i class="bi bi-9-square-fill"></i></span>
+                                <span>PANEL</span></a>
+                        </li>
+                        <li><hr class="divider"></li>
+                        <li class="nav-item dropdown ">
+                          <a class="dropdown-item dropdown-toggle text-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            TRABAJOS
+                          </a>
+                        
+                        <div class="collapse" id="collapseExample">
+                          <div class="">
+                            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                          </div>
+                        </div>
+                        </li>
                       <li><hr class="divider"></li>
                       <li>
                         <a class="nav-link" href="">USUARIO</a>
@@ -136,9 +147,6 @@
                 </nav>    
             </div>  
 
-            <div>
-              Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-            </div>
             <div class="dropdown mt-3">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
                 Dropdown button
