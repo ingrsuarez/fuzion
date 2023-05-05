@@ -15,6 +15,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/38a763211a.js" crossorigin="anonymous"></script>
 
     <!-- Styles -->
     <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
@@ -58,7 +59,7 @@
                             RRHH
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{{url('usuarios')}}">Usuarios</a></li>
+                            <li><a class="dropdown-item" href="">Usuarios</a></li>
                             <li><hr class="dropdown-divider"></li>
                             {{-- <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li> --}}
@@ -118,18 +119,20 @@
                     <ul class="navbar-nav">
                         <li>
                             <a class="nav-link text-dark" href="{{route('home')}}">
-                                <span class="me-2"><i class="bi bi-9-square-fill"></i></span>
+                                <span class="mx-2"><i class="fa-solid fa-gauge"></i></span>
                                 <span>PANEL</span></a>
                         </li>
                         <li><hr class="divider"></li>
                         <li class="nav-item dropdown ">
-                          <a class="dropdown-item dropdown-toggle text-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                            TRABAJOS
-                          </a>
+                            
+                            
+                            <a class="dropdown-item dropdown-toggle text-dark" data-bs-toggle="collapse" href="#collapseTrabajo" role="button" aria-expanded="false" aria-controls="collapseTrabajo">
+                            <span class="mx-2"><i class="fa-solid fa-clipboard mx-2"></i></span>
+                            <span>TRABAJOS</span>                         </a>
                         
-                        <div class="collapse" id="collapseExample">
-                          <div class="">
-                            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                        <div class="collapse" id="collapseTrabajo">
+                          <div class="ms-4 mt-2">
+                            Opciones de flujo de trabajo
                           </div>
                         </div>
                         </li>
